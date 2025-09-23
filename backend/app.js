@@ -18,7 +18,8 @@ app.use("/api/v/users", userRouter);
 
 
 // Error Handling
-app.use(errorHandler);
 app.use(notFoundHandler);
+app.use(errorHandler);
+
 
 export { app };
